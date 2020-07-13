@@ -1,0 +1,11 @@
+metamascara:
+  build: ./
+  restart: always
+  ports:
+    - "9001"
+  environment:
+    MASCARA_ORIGIN: "https://wallet.titanlab.vip"
+    VIRTUAL_PORT: "9001"
+    VIRTUAL_HOST: "wallet.titanlab.vip"
+    LETSENCRYPT_HOST: "wallet.titanlab.vip"
+    LETSENCRYPT_EMAIL: "admin@titanlab.vip"
